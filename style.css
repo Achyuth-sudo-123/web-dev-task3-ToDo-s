@@ -1,0 +1,114 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+.container{
+    width: 60%;
+    height: 80%;
+    background-color: rgb(106, 104, 104);
+    border-radius: 20px;
+    box-shadow: 0px 25px 75px rgba(0, 0, 0, 25),
+    0px 0px 70px rgba(0, 0, 0, 25),
+    inset 5px 5px 70px rgba(0, 0, 0, 0.2),
+    /* inset 5px 5px 2px rgba(0, 0, 0, 0.75), */
+    inset -5px -5px 0px rgba(0, 0, 0, 0.75);
+}
+.container h1
+{
+    text-align: center;
+    margin: 2%;
+    color: orange;
+    font-family: 'Times New Roman', Times, serif;
+}
+.newtask{
+    display: flex;
+    padding: 20px 10px;
+    margin: 2%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(40, 62, 62);
+    border-radius: 5px;
+}
+#taskinfo{
+    padding: 8px 5px;
+    border-radius: 5px;
+    border: none;
+    width: 75%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 10); 
+}
+#add
+{
+    padding: 8px 12px;
+    width: 15%;
+    border-radius: 4px;
+    border: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 5); 
+}
+#tasklist{
+    /* margin-bottom: 9px; */
+   
+    display: flex;
+    padding: 10px 10px;
+    margin: 2%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+    
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center; 
+    background-color: gray;
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, 5); 
+    padding: 5px 5px;
+    cursor:pointer;
+    margin: 0%;
+    margin-bottom: 9px;
+    height: 45px;
+    width: 100%;
+}
+#work{
+    background-color: whitesmoke;
+    width: 90%;
+    padding: 5px 5px;
+}
+.del{
+    color: red;
+    border: none;
+    
+    padding: 50px 10px;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+}
+#tasklist
+{
+    overflow-y: auto;
+    position: relative;
+    /* margin-top: 20px; */
+    height: 385px;
+}
+::-webkit-scrollbar
+{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background: #fff;
+}
